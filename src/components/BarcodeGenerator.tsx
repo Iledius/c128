@@ -31,7 +31,7 @@ const BarcodeGenerator = ({
       lineColor: "#000",
       width: 2,
       height: 60,
-      displayValue: false,
+      displayValue: true,
     });
   }, [iban, euros, cents, reference, dueDate]);
 
