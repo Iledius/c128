@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BarcodeGenerator from "./components/BarcodeGenerator";
-import "./App.css"; // Assuming you're adding styles in a separate CSS file
+import "./App.css";
 
 function App() {
   const [iban, setIban] = useState("");
