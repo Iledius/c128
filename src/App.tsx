@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BarcodeGenerator from "./components/BarcodeGenerator";
 import "./App.css"; // Assuming you're adding styles in a separate CSS file
 
@@ -9,7 +9,7 @@ function App() {
   const [reference, setReference] = useState("");
   const [dueDate, setDueDate] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     // Optional: Add validation here if needed
   };
