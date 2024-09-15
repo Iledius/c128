@@ -27,7 +27,7 @@ const BarcodeGenerator = ({
     const barcodeData = `${version}${ibanNumber}${euroAmount}${centAmount}${rfReference}${formattedDueDate}`;
 
     JsBarcode(barcodeRef.current, barcodeData, {
-      format: "CODE128",
+      format: "CODE128C",
       lineColor: "#000",
       width: 2,
       height: 60,
